@@ -113,7 +113,8 @@ def scan_private_host(target: str) -> list[str]:
         sock = socket.socket(socket.AF_INET6 if ip.version == 6 else socket.AF_INET, socket.SOCK_STREAM)
         sock.settimeout(0.45)
         try:
-            status = sock.connect_ex((str(ip), port))
+            address = (str(ip), port, 0, 0) if ip.version == 6 else (str(ip), port)
+            status = sock.connect_ex(address)
             results.append(f"Port {port:5} : " + ("accessible" if status == 0 else "non accessible"))
         except OSError as exc:
             results.append(f"Port {port:5} : résultat indisponible ({exc.__class__.__name__})")
