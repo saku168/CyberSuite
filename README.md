@@ -1,6 +1,14 @@
+<p align="center">
+  <img src="assets/github-banner.svg" alt="CyberSuite — One suite. Four cyber tools." width="100%">
+</p>
+
 # CyberSuite
 
 Application de bureau de cybersécurité défensive pour Windows 11, en français.
+
+<p align="center">
+  <img src="assets/cybersuite-logo.svg" alt="Logo CyberSuite" width="520">
+</p>
 
 ## Modules
 
@@ -41,7 +49,7 @@ python -m pip install pyinstaller
 pyinstaller --noconfirm --clean --onefile --windowed --name CyberSuite main.py
 ```
 
-L'exécutable se trouve dans `dist\CyberSuite.exe`.
+L'exécutable se trouve dans `dist\\CyberSuite.exe`.
 
 ## Utilisation responsable et limites
 
