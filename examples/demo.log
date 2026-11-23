@@ -1,0 +1,5 @@
+2026-11-20 09:00:01 INFO Service started
+2026-11-20 09:03:12 WARN Failed password for demo-user from 192.0.2.25
+2026-11-20 09:04:05 INFO Normal scheduled task completed
+2026-11-20 09:05:33 ERROR 503 Service Unavailable
+2026-11-20 09:07:41 WARN Permission denied while reading demo-file
