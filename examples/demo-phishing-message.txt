@@ -1,0 +1,8 @@
+Objet : ACTION IMMÉDIATE — compte de démonstration suspendu
+
+Bonjour,
+Votre compte fictif sera suspendu. Confirmez vos informations sur
+http://192.0.2.1/verify-account
+
+Ceci est un exemple entièrement inventé pour tester CyberSuite.
+Ne visitez pas l'adresse et ne saisissez aucune information personnelle.
