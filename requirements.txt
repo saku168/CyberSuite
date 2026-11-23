@@ -1,0 +1,2 @@
+# CyberSuite utilise uniquement la bibliothèque standard de Python.
+# PyInstaller est installé dans le workflow de compilation.
