@@ -28,6 +28,12 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install pyinstaller
 
+      - name: Run automated tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Check Python syntax
+        run: python -m py_compile main.py scripts/generate_icon.py
+
       - name: Generate Windows icon
         run: python scripts/generate_icon.py
 
