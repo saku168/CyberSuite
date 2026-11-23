@@ -4,6 +4,7 @@ from __future__ import annotations
 import ipaddress
 import re
 import socket
+import sys
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 from urllib.parse import urlparse
@@ -130,6 +131,13 @@ class CyberSuiteApp(tk.Tk):
         self.geometry("940x680")
         self.minsize(760, 560)
         self.configure(bg=BG)
+        icon_root = Path(getattr(sys, "_MEIPASS", Path(__file__).resolve().parent))
+        icon_path = icon_root / "assets" / "cybersuite.ico"
+        try:
+            if icon_path.exists():
+                self.iconbitmap(default=str(icon_path))
+        except tk.TclError:
+            pass
         self._style()
         self._build()
 
