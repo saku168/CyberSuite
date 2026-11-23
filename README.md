@@ -4,6 +4,9 @@
 
 # CyberSuite
 
+[![Build Windows executable](https://github.com/saku168/CyberSuite/actions/workflows/build-windows.yml/badge.svg)](https://github.com/saku168/CyberSuite/actions/workflows/build-windows.yml)
+
+
 Application de bureau de cybersécurité défensive pour Windows 11, en français.
 
 <p align="center">
@@ -16,6 +19,16 @@ Application de bureau de cybersécurité défensive pour Windows 11, en françai
 - **PasswordChecker** : estimation locale indicative de robustesse. Le texte saisi est effacé après l'évaluation et n'est jamais enregistré ni envoyé.
 - **LogAnalyzer** : recherche de motifs courants dans un fichier journal texte choisi localement.
 - **PhishingDetector** : repérage heuristique d'indices suspects dans un message ou une URL. Aucun lien n'est ouvert.
+
+## Identité visuelle
+
+- Logo : `assets/cybersuite-logo.svg`
+- Icône Windows : générée automatiquement par `scripts/generate_icon.py` pendant la compilation.
+- Bannière : `assets/github-banner.svg`
+
+## Exemples de démonstration
+
+Les fichiers `examples/demo.log` et `examples/demo-phishing-message.txt` sont entièrement fictifs et permettent de tester les deux analyseurs sans utiliser de données personnelles.
 
 ## Lancer depuis les sources
 
@@ -56,3 +69,17 @@ L'exécutable se trouve dans `dist\\CyberSuite.exe`.
 Utilise CyberSuite uniquement sur tes propres systèmes, fichiers et comptes, ou avec une autorisation explicite. CyberScanner n'accepte que des adresses IP privées/locales et réalise uniquement quelques connexions TCP de vérification. Les résultats sont indicatifs : ils ne constituent pas un audit complet et peuvent contenir des faux positifs ou des faux négatifs.
 
 **PasswordChecker :** n'entre jamais un mot de passe réellement utilisé. L'évaluation est une heuristique locale, pas un contrôle contre des bases de mots de passe compromis.
+
+## Contribuer
+
+Les contributions sont les bienvenues ! Consulte [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md) et le [code de conduite](CODE_OF_CONDUCT.md). Pour proposer une amélioration ou signaler un bug, utilise les modèles d'issues GitHub.
+
+## Kit de présentation
+
+Le [kit de lancement en français](docs/LAUNCH_KIT_FR.md) contient une description courte, un script vidéo et une checklist de publication.
+
+## Tests
+
+```powershell
+python -m unittest discover -s tests -v
+```
